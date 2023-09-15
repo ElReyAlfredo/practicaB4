@@ -1,24 +1,58 @@
-.logo_marca {
-  width: 8%;
-  height: auto;
+.navbar .navbar-nav .nav-link {
+  transition: all 0.3s;
 }
 
-.logo {
-  padding-top: 3px;
-  padding-bottom: 3px;
+.bg-red {
+  background-color: rgb(200, 0, 0);
 }
 
-.portada {
-  width: 3%;
-  height: auto;
+.bg-strong-red {
+  background-color: rgb(180, 0, 0);
 }
 
-.radio {
-  width: 6%;
-  height: auto;
+.navbar .navbar-nav .nav-link:hover {
+  background-color: darkred;
+  color: white;
 }
 
-.laliga {
-  width: 4%;
-  height: auto;
+.no-wrap {
+  white-space: nowrap;
+}
+
+@media (min-width: 800px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+ul.horizontal-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul.horizontal-list li {
+  margin-right: 10px;
+}
+
+.card-img-container {
+  height: 100%;
+  width: 100%;
+}
+
+.card-img-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.col-12 col-sm-6 col-md-4 d-flex align-items-center fw-bold fs-6 text {
+  position: fixed; /* Esto mantiene el div fijo en la pantalla */
+  top: 0; /* Alinea el div en la parte superior de la pantalla */
+  left: 0; /* Alinea el div en el lado izquierdo de la pantalla */
+  height: 100%; /* Hace que el div tenga la misma altura que la pantalla */
+  width: 50%; /* Ajusta el valor según la mitad del ancho que desees ocupar */
+  background-color: #f0f0f0; /* Cambia el color de fondo según tus preferencias */
+  /* Otros estilos y contenido del div */
 }

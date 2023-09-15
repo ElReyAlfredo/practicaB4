@@ -1,66 +1,975 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--HECHO POR: CASTILLO AGUILAR DIEGO y DELGADO ANGUIANO JORGE ALFREDO-->
+<html lang="es">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./src/style.css" />
+    <title>MARCA - Diario online líder en informacion (Practica B4)</title>
+    <link rel="shortcut icon" href="src/img/SHORT.svg" type="image/png" />
+    <link href="./src/style.css" rel="stylesheet" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
-
-    <title>Hello, world!</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
+
   <body>
-    <div class="row display-flex justify-content-center align-items-center">
-      <div class="main-site-highlights">
-        <div class="portada-hoy">
+    <header>
+      <div class="container">
+        <div class="col-md-12">
+          <div
+            class="d-flex flex-row"
+            style="overflow-x: auto; white-space: nowrap"
+          >
+            <span class="text-body-secondary" style="font-size: smaller">
+              <span class="fw-bold">Es noticia:</span>
+              <a href="#" class="text-decoration-none text-dark"
+                >Pogba dopaje</a
+              >
+              /
+              <a href="#" class="text-decoration-none text-dark">Gavi</a> /
+              <a href="#" class="text-decoration-none text-dark"
+                >España - Escocia</a
+              >
+              /
+              <a href="#" class="text-decoration-none text-dark">Rubiales</a>
+              /
+              <a href="#" class="text-decoration-none text-dark">Boxing</a> /
+              <a href="#" class="text-decoration-none text-dark">Gaming</a> /
+              <a href="#" class="text-decoration-none text-dark"
+                >Marc Márquez</a
+              >
+              /
+              <a href="#" class="text-decoration-none text-dark">Ketsbaia</a>
+              /
+              <a href="#" class="text-decoration-none text-dark">Chismes</a> /
+              <a href="#" class="text-decoration-none text-dark"
+                >Alkorta Athletic</a
+              >
+              /
+              <a href="#" class="text-decoration-none text-dark"
+                >Medvedev a Djokovic</a
+              >
+              /
+              <a href="#" class="text-decoration-none text-dark"
+                >España - Chipre TV</a
+              >
+              /
+              <a href="#" class="text-decoration-none text-dark"
+                >Koke prision</a
+              >
+              /
+              <span class="fw-bold">Daniel Snach...</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-3 d-flex align-items-center fw-bold fs-6 text">
+            <img
+              src="src/img/portada.jpg"
+              alt="La portada de hoy"
+              class="img-fluid m-1 d-none d-lg-block"
+              style="width: 2rem"
+            />
+            <span class="d-none d-lg-block" style="font-size: 0.7rem"
+              >La portada de hoy</span
+            >
+
+            <img
+              src="src/img/radio.png"
+              alt="Radio MARCA"
+              class="img-fluid m-1 d-none d-lg-block"
+              style="width: 4rem"
+            />
+            <span class="d-none d-lg-block" style="font-size: 0.7rem"
+              >Radio MARCA</span
+            >
+
+            <img
+              src="src/img/cuidate.jpg"
+              alt="CuidatePlus"
+              class="img-fluid m-1 d-none d-lg-block"
+              style="width: 2rem"
+            />
+            <span class="d-none d-lg-block" style="font-size: 0.2 rem"
+              >CuidatePlus</span
+            >
+          </div>
+
+          <div class="col-6 text-center d-none d-lg-block">
+            <img
+              src="src/img/marca-logo.webp"
+              alt="Logo MARCA"
+              class="img-fluid"
+              style="width: 200px"
+            />
+          </div>
+          <div class="col-3 d-flex align-items-center justify-content-end">
+            <div class="btn-group d-none d-lg-block">
+              <button
+                class="btn btn-secondary bg-light text-dark btn-sm dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="src/img/españas.png"
+                  alt="México"
+                  class="img-fluid"
+                  style="width: 20px"
+                />
+                ESP
+              </button>
+            </div>
+            <div class="m-1 mt-0 mb-0"></div>
+
+            <button
+              type="button"
+              class="btn btn-outline-danger btn-sm d-none d-lg-block"
+            >
+              Iniciar sesión
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-red sticky-top"
+      style="padding: 0"
+    >
+      <div class="container">
+        <a class="navbar-brand d-lg-none" href="#">
           <img
-            src="src/img/portada.jpg"
-            alt="La portada de hoy"
-            class="portada"
+            src="src/img/marca2.png"
+            alt="Logo MARCA"
+            class="imagen-con-fondo"
+            style="width: 150px"
           />
-          <p>La portada de hoy</p>
-        </div>
-        <div class="radio-marca">
-          <img src="src/img/radio.png" alt="Radio Marca" class="radio" />
-        </div>
-        <div class="la-fantasi">
-          <img src="src/img/fantasy.png" alt="La Liga Fantasy" class="laliga" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 fs-6">
+            <button
+              type="button"
+              class="btn btn-outline-light btn-sm d-lg-none text-bg-danger"
+            >
+              Suscribirse
+            </button>
+
+            <button
+              type="button"
+              class="btn btn-outline-light btn-sm d-lg-none"
+            >
+              Iniciar sesión
+            </button>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active fw-bold"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Fútbol
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active fw-bold"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Baloncesto
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fw-bold" href="#">Motor</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active fw-bold"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Polideportivo
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active fw-bold"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Coches
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item bg-strong-red">
+              <a class="nav-link active" href="#">Ultima hora</a>
+            </li>
+            <li class="nav-item bg-strong-red">
+              <a class="nav-link active" href="#">Fantasy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fw-bold" href="#">Más +</a>
+            </li>
+            <li class="nav-item dropdown d-lg-none">
+              <a
+                class="nav-link dropdown-toggle active fw-bold"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  src="src/img/españas.png"
+                  alt="México"
+                  class="img-fluid"
+                  style="width: 20px"
+                />
+                ESP
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="logo d-flex justify-content-center">
-        <img
-          src="src/img/marca-logo.webp"
-          alt="Logo Marca"
-          class="logo_marca"
-        />
+    </nav>
+
+    <main>
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-md-12 m-1 d-flex justify-content-center"
+            style="margin: 10%"
+          >
+            <ul class="horizontal-list d-flex justify-content-center">
+              <li>
+                <a href="#" title="Deportivo Alvez">
+                  <img
+                    src="src/img/deportivo-alvez.png"
+                    class="img-fluid"
+                    alt="Deportivo Alvez"
+                    style="width: 2rem"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#" title="Almeria">
+                  <img
+                    src="src/img/almeria.png"
+                    class="img-fluid"
+                    alt="Almeria"
+                    style="width: 2rem"
+                  />
+                </a>
+              </li>
+
+              <li>
+                <a href="#" title="Atletico de Madrid">
+                  <img
+                    src="src/img/atletico-madrid.png"
+                    class="img-fluid"
+                    alt="Atletico de Madrid"
+                    style="width: 2rem"
+                  />
+                </a>
+              </li>
+
+              <li>
+                <a href="#" title="Barcelona">
+                  <img
+                    src="src/img/barca.png"
+                    class="img-fluid"
+                    alt="Barcelona"
+                    style="width: 2rem"
+                  />
+                </a>
+              </li>
+
+              <li>
+                <a href="#" title="Betis">
+                  <img
+                    src="src/img/betis.png"
+                    class="img-fluid"
+                    alt="Betis"
+                    style="width: 2rem"
+                  />
+                </a>
+              </li>
+
+              <li>
+                <a href="#" title="Cadiz">
+                  <img
+                    src="src/img/cadiz.png"
+                    class="img-fluid"
+                    alt="Cadiz"
+                    style="width: 2rem"
+                  />
+                </a>
+              </li>
+
+              <li>
+                <a href="#" title="Celta">
+                  <img
+                    src="src/img/celta.png"
+                    class="img-fluid"
+                    alt="Celta"
+                    style="width: 2rem"
+                  />
+                </a>
+              </li>
+
+              <li>
+                <a href="#" title="Getafe">
+                  <img
+                    src="src/img/getafe.png"
+                    class="img-fluid"
+                    alt="Getafe"
+                    style="width: 2rem"
+                  />
+                </a>
+              </li>
+
+              <li>
+                <a href="#" title="Girona">
+                  <img
+                    src="src/img/irona.png"
+                    class="img-fluid"
+                    alt="Girona"
+                    style="width: 2rem"
+                  />
+                </a>
+              </li>
+
+              <li>
+                <a href="#" title="Granada">
+                  <img
+                    src="src/img/granada.png"
+                    class="img-fluid"
+                    alt="Granada"
+                    style="width: 2rem"
+                  />
+                </a>
+              </li>
+
+              <li>
+                <a href="#" title="Palmas">
+                  <img
+                    src="src/img/palmas.png"
+                    class="img-fluid"
+                    alt="Palmas"
+                    style="width: 2rem"
+                  />
+                </a>
+              </li>
+
+              <li>
+                <a href="#" title="Mallorca">
+                  <img
+                    src="src/img/mayorca.png"
+                    class="img-fluid"
+                    alt="Mallorca"
+                    style="width: 2rem"
+                  />
+                </a>
+              </li>
+
+              <li>
+                <a href="#" title="Osasuna">
+                  <img
+                    src="src/img/osa.png"
+                    class="img-fluid"
+                    alt="Osasuna"
+                    style="width: 2rem"
+                  />
+                </a>
+              </li>
+
+              <li>
+                <a href="#" title="Vallecano">
+                  <img
+                    src="src/img/vallecano.png"
+                    class="img-fluid"
+                    alt="Vallecano"
+                    style="width: 2rem"
+                  />
+                </a>
+              </li>
+
+              <li>
+                <a href="#" title="Real Madrid">
+                  <img
+                    src="src/img/madrid.png"
+                    class="img-fluid"
+                    alt="Real Madrid"
+                    style="width: 2rem"
+                  />
+                </a>
+              </li>
+
+              <li>
+                <a href="#" title="Real Sociedad">
+                  <img
+                    src="src/img/real-sociedad.png"
+                    class="img-fluid"
+                    alt="Real Sociedad"
+                    style="width: 2rem"
+                  />
+                </a>
+              </li>
+
+              <li>
+                <a href="#" title="Sevilla">
+                  <img
+                    src="src/img/sevilla.png"
+                    class="img-fluid"
+                    alt="Sevilla"
+                    style="width: 2rem"
+                  />
+                </a>
+              </li>
+
+              <li>
+                <a href="#" title="Valencia">
+                  <img
+                    src="src/img/valencia.png"
+                    class="img-fluid"
+                    alt="Valencia"
+                    style="width: 2rem"
+                  />
+                </a>
+              </li>
+
+              <li>
+                <a href="#" title="Villareal">
+                  <img
+                    src="src/img/villareal.png"
+                    class="img-fluid"
+                    alt="Villareal"
+                    style="width: 2rem"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-12">
+            <table class="table table-bordered">
+              <tbody>
+                <tr>
+                  <th scope="row" class="align-middle text-center">
+                    <p class="">Resultados:</p>
+                    <div class="btn-group">
+                      <button
+                        class="btn btn-secondary bg-light text-dark btn-sm dropdown-toggle"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Todos
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Something else here</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </th>
+
+                  <td>
+                    <p class="fw-bold">CLASIFICACION EUROCOPA</p>
+
+                    <div class="row">
+                      <div class="col-md-4" style="padding-inline: 0.5%">
+                        <div class="card">
+                          <div class="card-body text-center">
+                            <p class="text-muted">Finalizado</p>
+                            <div class="row">
+                              <div class="col-md-3">
+                                <img
+                                  src="src/img/armenia.png"
+                                  class="img-fluid"
+                                  alt="Armenia Bandera"
+                                  style="width: 40px"
+                                />
+                              </div>
+                              <div class="col-md-6">
+                                <p class="no-wrap">Armenia</p>
+                              </div>
+                              <div class="col-md-3">
+                                <p class="">0</p>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-3">
+                                <img
+                                  src="src/img/croacia.png"
+                                  class="img-fluid"
+                                  alt="Croacia Bandera"
+                                  style="width: 40px"
+                                />
+                              </div>
+                              <div class="col-md-6">
+                                <p class="no-wrap">Croacia</p>
+                              </div>
+                              <div class="col-md-3">
+                                <p class="fw-bold">1</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4" style="padding-inline: 0.5%">
+                        <div class="card">
+                          <div class="card-body text-center">
+                            <p class="text-muted">Finalizado</p>
+                            <div class="row">
+                              <div class="col-md-3">
+                                <img
+                                  src="src/img/portugal.png"
+                                  class="img-fluid"
+                                  alt="Portugal Bandera"
+                                  style="width: 40px"
+                                />
+                              </div>
+                              <div class="col-md-6">
+                                <p class="no-wrap">Portugal</p>
+                              </div>
+                              <div class="col-md-3">
+                                <p class="fw-bold">9</p>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-3">
+                                <img
+                                  src="src/img/luxe.png"
+                                  class="img-fluid"
+                                  alt="Luxemburgo Bandera"
+                                  style="width: 40px"
+                                />
+                              </div>
+                              <div class="col-md-6">
+                                <p class="no-wrap">Luxemburgo</p>
+                              </div>
+                              <div class="col-md-3">
+                                <p class="">0</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4" style="padding-inline: 0.5%">
+                        <div class="card">
+                          <div class="card-body text-center">
+                            <p class="text-muted">Finalizado</p>
+                            <div class="row">
+                              <div class="col-md-3">
+                                <img
+                                  src="src/img/eslovaquia.png"
+                                  class="img-fluid"
+                                  alt="Eslovaquia Bandera"
+                                  style="width: 40px"
+                                />
+                              </div>
+                              <div class="col-md-6">
+                                <p class="no-wrap">Eslovaquia</p>
+                              </div>
+                              <div class="col-md-3">
+                                <p class="fw-bold">3</p>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-3">
+                                <img
+                                  src="src/img/lie.png"
+                                  class="img-fluid"
+                                  alt="Liechtenstein Bandera"
+                                  style="width: 40px"
+                                />
+                              </div>
+                              <div class="col-md-6">
+                                <p class="no-wrap">Liechtenstein</p>
+                              </div>
+                              <div class="col-md-3">
+                                <p class="no-wrap">0</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <hr />
+            <div class="row">
+              <div class="col-md-8">
+                <article class="card mb-3">
+                  <a href="#" class="text-decoration-none text-dark">
+                    <img
+                      src="src/img/benzema.webp"
+                      class="card-img-top"
+                      alt="Benzema Real Madrid"
+                    />
+                    <div class="card-body">
+                      <h6 class="card-subtitle mb-2 text-danger fw-bold">
+                        REAL MADRID
+                      </h6>
+                      <h5 class="card-title fs-1 fw-bolder">
+                        100 días sin Benzema: un golpe que aún se deja sentir en
+                        el Real Madrid
+                      </h5>
+                      <div class="card-footer fw-medium p-0">
+                        <small class="">J.L. CALDERÓN</small>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+                <article class="card mb-3">
+                  <a href="#" class="text-decoration-none text-dark">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img
+                          src="src/img/deportistas.webp"
+                          class="img-fluid rounded-start w-100"
+                          alt="Deportistas"
+                        />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h6 class="card-subtitle mb-2 text-danger fw-bold">
+                            POLIDEPORTIVO
+                          </h6>
+                          <h5 class="card-title fs-4 fw-bolder">
+                            ¿Quién es el mejor deportista masculino de todos los
+                            tiempos?
+                          </h5>
+                          <div class="card-footer fw-medium p-0">
+                            <small class="">TOMÁS CAMPOS</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </div>
+
+              <div class="col-md-4">
+                <article class="card mb-3">
+                  <a href="#" class="text-decoration-none text-dark">
+                    <div class="row g-0">
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h6 class="card-subtitle mb-2 text-danger fw-bold">
+                            CARVAJAL
+                          </h6>
+                          <h5 class="card-title fs-6 fw-bolder">
+                            "Todo ha cambiado desde que eliminé el gluten de mi
+                            vida"
+                          </h5>
+                          <div class="card-footer fw-medium p-0">
+                            JESÚS MATA
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 d-flex align-items-center">
+                        <img
+                          src="src/img/carvajal.jpg"
+                          class="img-fluid rounded-end card-img-container w-100"
+                          alt="Carvajal"
+                        />
+                      </div>
+                    </div>
+                  </a>
+                </article>
+                <article class="card mb-3">
+                  <a href="#" class="text-decoration-none text-dark">
+                    <div class="row g-0">
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h6 class="card-subtitle mb-2 text-danger fw-bold">
+                            SERIE A
+                          </h6>
+                          <h5 class="card-title fs-6 fw-bolder">
+                            El gran sueño de Pogba acaba en pesadilla
+                          </h5>
+                          <div class="card-footer fw-medium p-0">V.ROMERO</div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 d-flex align-items-center">
+                        <img
+                          src="src/img/pogba.webp"
+                          class="img-fluid rounded-end card-img-container"
+                          alt="Pogba"
+                        />
+                      </div>
+                    </div>
+                  </a>
+                </article>
+                <article class="card mb-3">
+                  <a href="#" class="text-decoration-none text-dark">
+                    <div class="row g-0">
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h6 class="card-subtitle mb-2 text-danger fw-bold">
+                            RUBIALES
+                          </h6>
+                          <h5 class="card-title fs-6 fw-bolder">
+                            "El beso a Jenni fue como el que daría a mis hijas"
+                          </h5>
+                          <div class="card-footer fw-medium p-0">
+                            JAMES SUNDERLAND
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 d-flex align-items-center">
+                        <img
+                          src="src/img/pelon.webp"
+                          class="img-fluid rounded-end card-img-container"
+                          alt="Rubiales"
+                        />
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-md-8">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                  <div class="col">
+                    <article class="card">
+                      <img
+                        src="src/img/rubia.webp"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-danger fw-bold">
+                          OLGA CARMONA
+                        </h6>
+                        <h5 class="card-title fs-5 fw-bolder">
+                          "Tenemos que hablar entre nosotras para ver qué
+                          pasa..."
+                        </h5>
+                        <div class="card-footer fw-medium p-0">
+                          <small class="">J.F. BORRELL</small>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="col">
+                    <article class="card">
+                      <img
+                        src="src/img/espa.webp"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-danger fw-bold">
+                          ESPAÑA 1-0 ESCOCIA
+                        </h6>
+                        <h5 class="card-title fs-5 fw-bolder">
+                          Turrientes remata al trabajo
+                        </h5>
+                        <div class="card-footer fw-medium p-0">
+                          <small class="">PABLO EGEA</small>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="col">
+                    <article class="card">
+                      <img
+                        src="src/img/re.webp"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <div class="card-body">
+                        <h6 class="card-subtitle mb-2 text-danger fw-bold">
+                          PRESNA
+                        </h6>
+                        <h5 class="card-title fs-5 fw-bolder">
+                          Las portadas: el día de Lamine, el futuro del Barça...
+                        </h5>
+                        <div class="card-footer fw-medium p-0">JAMES CLEAR</div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4"></div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-md-8">
+                <article class="card mb-3">
+                  <a href="#" class="text-decoration-none text-dark">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img
+                          src="src/img/bici.webp"
+                          class="img-fluid rounded-start"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h6 class="card-subtitle mb-2 text-danger fw-bold">
+                            OPERADOR OFICIAL
+                          </h6>
+                          <h5 class="card-title fs-5 fw-bolder">
+                            Así es el gran desafío logístico detrás de La Vuelta
+                            Ciclista España
+                          </h5>
+                          <div class="card-footer fw-medium p-0">
+                            <small class=""
+                              >UN PROYECTO DE <strong>CORREOS</strong></small
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </article>
+              </div>
+              <div class="col-md-4"></div>
+            </div>
+            <hr />
+          </div>
+        </div>
       </div>
-      <aside class="tools-header"></aside>
-    </div>
+    </main>
 
-    <!-- Optional JavaScript; choose one of the two! -->
+    <footer class="text-center p-3 mt-5">
+      <p class="fw-bold" style="font-size: 17px">
+        &copy; Septiembre 2023 Unidad Editorial Información Deportiva, S.L.U.
+        Todos los derechos reservados.
+      </p>
+      <p class="">
+        <a href="#" class="text-decoration-none text-dark"
+          >Política de privacidad</a
+        >
+        /
+        <a href="#" class="text-decoration-none text-dark"
+          >Política de cookies</a
+        >
+        /
+        <a href="#" class="text-decoration-none text-dark"
+          >Política de publicidad</a
+        >
+        / <a href="#" class="text-decoration-none text-dark">Contacto</a> /
+        <a href="#" class="text-decoration-none text-dark">Aviso legal</a> /
+        <a href="#" class="text-decoration-none text-dark">Publicidad</a>
+      </p>
+      <p class="fw-bold">Síguenos en:</p>
+      <span class="">
+        <a href="#" class="text-decoration-none text-dark m-3">
+          <img
+            src="src/img/facebook.webp"
+            class=""
+            alt="Facebook logo"
+            style="width: 3rem"
+          />
+        </a>
+        <a href="#" class="text-decoration-none text-dark m-3">
+          <img
+            src="src/img/twiter.png"
+            class=""
+            alt="Twitter logo"
+            style="width: 3rem; border-radius: 50%"
+          />
+        </a>
+        <a href="#" class="text-decoration-none text-dark m-3">
+          <img
+            src="src/img/rss.png"
+            class=""
+            alt="RSS logo"
+            style="width: 3rem"
+          />
+        </a>
+      </span>
+    </footer>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- Bootstrap JS and dependencies -->
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
   </body>
